@@ -2,7 +2,7 @@ import useFetch from "../components/useFetch";
 import { useHistory } from 'react-router-dom';
 
 const Login = ({ stateHandler }) => {
-    const { data, isLoading, error } = useFetch('http://159.89.224.58/users?username=dickie');
+    const { data, isLoading, error } = useFetch('https://159.89.224.58/users?username=dickie');
     const history = useHistory();
     const logMe = () => {
         stateHandler({ ...data[0], loggedIn: true, password: "" });

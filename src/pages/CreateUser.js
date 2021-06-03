@@ -13,7 +13,7 @@ const CreateUser = ({ user, stateHandler }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setIsLoading(true);
-        fetch("http://159.89.224.58/users", {
+        fetch("https://159.89.224.58/users", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
