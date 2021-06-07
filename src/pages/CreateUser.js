@@ -13,7 +13,7 @@ const CreateUser = ({ user, stateHandler }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setIsLoading(true);
-        fetch("https://159.89.224.58/users", {
+        fetch("http://strapi.gaybear.capital/auth/local", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -40,7 +40,7 @@ const CreateUser = ({ user, stateHandler }) => {
         }
     }
     return (
-        <div className="create">
+        <div className="form">
             <h2>Create New User</h2>
             <form>
             <label>Username</label>
@@ -68,7 +68,7 @@ const CreateUser = ({ user, stateHandler }) => {
                     required
                 />
                 {
-                    errors.password && <div className="password-error">{errors.password}</div>
+                    errors.password && <div className="error-text">{errors.password}</div>
                 }
                 <label>Confirm Password</label>
                 <input

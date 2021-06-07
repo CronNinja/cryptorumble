@@ -1,10 +1,10 @@
 import { useParams } from "react-router";
 import CryptoDetailsInfo from "./CryptoDetailsInfo";
-import useFetch from "./useFetch";
+import UseFetch from "./UseFetch";
 
 const CryptoDetails = () => {
     const { symbol } = useParams();
-    const { data: crypto, isLoading, error } = useFetch("https://coincodex.com/api/coincodex/get_coin/" + symbol.toUpperCase());
+    const { data: crypto, isLoading, error } = UseFetch("https://coincodex.com/api/coincodex/get_coin/" + symbol.toUpperCase());
     return (
         <div className="crypto-details">
             { isLoading && <div> Loading...</div> }

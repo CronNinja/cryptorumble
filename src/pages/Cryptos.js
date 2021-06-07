@@ -1,8 +1,8 @@
 import CryptoList from "../components/CryptoList";
-import useFetch from "../components/useFetch";
+import UseFetch from "../components/UseFetch";
 
 const Cryptos = () => {
-    const { data: cryptos, isLoading, error } = useFetch("https://coincodex.com/api/coincodex/get_coin/XRP");
+    const { data: cryptos, isLoading, error } = UseFetch("https://coincodex.com/api/coincodex/get_coin/XRP");
     return (
         <div className="home">
             { isLoading && <div> Loading...</div> }

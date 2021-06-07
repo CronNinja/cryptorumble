@@ -9,7 +9,7 @@ const UserAccount = ( { user, stateHandler, setBaseUser }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setIsLoading(true);
-        fetch("https://159.89.224.58/users/" + user.id, {
+        fetch("http://159.89.224.58/users/" + user.id, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -26,7 +26,7 @@ const UserAccount = ( { user, stateHandler, setBaseUser }) => {
 
     }
     const handleDelete = () => {
-        fetch("http://localhost:8000/users/" + user.id, {
+        fetch("http://159.89.224.58/users/" + user.id, {
             method: 'DELETE'
         }).then(() => {
             console.log("Deleted: User");
@@ -36,7 +36,7 @@ const UserAccount = ( { user, stateHandler, setBaseUser }) => {
         })
     }
     return (
-        <div className="create">
+        <div className="form">
             <h2>Update New User</h2>
             <form>
                 <label>Username</label>

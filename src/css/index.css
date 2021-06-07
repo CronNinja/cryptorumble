@@ -51,11 +51,20 @@
 }
 /* crypto-details */
 .crypto-details h2 {
-  font-size: 20px;
+  font-size: 30px;
   color:#5a2f3c;
   margin-bottom: 10px;
 }
-
+.crypto-details-price {
+  font-size: 15px;
+  color:#4c8536a2;
+  margin-bottom: 10px;
+}
+.crypto-details h3 {
+  font-size: 20px;
+  color:#5a2f3ca2;
+  margin-bottom: 10px;
+}
 .crypto-details div {
   margin: 20px 0;
 }
@@ -91,22 +100,22 @@ ul {
   padding: 0;
 }
 
-/* create new blog form */
-.create {
+/* form */
+.form {
   max-width: 400px;
   margin: 0 auto;
   text-align: center;
 }
-.create label {
+.form label {
   text-align: left;
   display: block;
 }
-.create h2 {
+.form h2 {
   font-size: 20px;
   color: #5a2f3c;
   margin-bottom: 30px;
 }
-.create input, .create textarea, .create select {
+.form input, .form textarea, .form select {
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
@@ -115,7 +124,7 @@ ul {
   display: block;
 }
 
-/* Password Errors */
-.password-error{
+/* Error Text */
+.error-text{
   color: red;
 }
